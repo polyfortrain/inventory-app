@@ -1,0 +1,34 @@
+@startuml
+' 在庫管理Webアプリケーション：Issue #3 ユースケース図
+left to right direction
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName "Noto Sans CJK JP"
+skinparam rectangle {
+  BorderColor #63758B
+  BackgroundColor #F9FBFF
+}
+skinparam usecase {
+  BorderColor #1B587C
+  BackgroundColor #EAF4FC
+  FontColor #18334B
+}
+skinparam actor {
+  BorderColor #35485E
+  FontColor #18334B
+}
+
+actor "在庫管理担当者" as Staff
+
+rectangle "在庫管理Webアプリケーション" {
+  usecase "UC-01\n在庫一覧を表示する" as UC01
+  usecase "UC-02\n在庫を登録する" as UC02
+  usecase "UC-03\n在庫を更新する" as UC03
+  usecase "UC-04\n在庫を削除する" as UC04
+}
+
+Staff -- UC01
+Staff -- UC02
+Staff -- UC03
+Staff -- UC04
+@enduml
