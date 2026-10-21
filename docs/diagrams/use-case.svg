@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="625px" version="1.1" viewBox="0 0 1020 625" width="1020px">
+  <title>在庫管理Webアプリケーションのユースケース図</title>
+  <desc>アクター在庫管理担当者からUC-01一覧表示、UC-02登録、UC-03更新、UC-04削除に関連線を引いたUMLユースケース図。</desc>
+  <defs/>
+  <rect fill="#FFFFFF" height="625" width="1020" x="0" y="0"/>
+  <text fill="#18334B" font-family="Noto Sans CJK JP, Meiryo, Yu Gothic, sans-serif" font-size="26" font-weight="bold" x="52" y="52">在庫管理Webアプリケーション  |  ユースケース図</text>
+  <line stroke="#D5DFEA" stroke-width="2" x1="52" x2="968" y1="72" y2="72"/>
+  <rect fill="#F9FBFF" height="453" rx="8" ry="8" stroke="#63758B" stroke-width="2" width="625" x="335" y="111"/>
+  <rect fill="#FFFFFF" height="30" rx="5" ry="5" width="310" x="361" y="96"/>
+  <text fill="#18334B" font-family="Noto Sans CJK JP, Meiryo, Yu Gothic, sans-serif" font-size="19" font-weight="bold" x="376" y="118">在庫管理Webアプリケーション</text>
+  <line stroke="#52677C" stroke-width="2.3" x1="211" x2="482" y1="308" y2="194"/>
+  <line stroke="#52677C" stroke-width="2.3" x1="211" x2="482" y1="308" y2="296"/>
+  <line stroke="#52677C" stroke-width="2.3" x1="211" x2="482" y1="308" y2="398"/>
+  <line stroke="#52677C" stroke-width="2.3" x1="211" x2="482" y1="308" y2="500"/>
+  <circle cx="174" cy="261" fill="#FFFFFF" r="21" stroke="#35485E" stroke-width="3"/>
+  <line stroke="#35485E" stroke-linecap="round" stroke-width="3.5" x1="174" x2="174" y1="282" y2="349"/>
+  <line stroke="#35485E" stroke-linecap="round" stroke-width="3.5" x1="135" x2="211" y1="308" y2="308"/>
+  <line stroke="#35485E" stroke-linecap="round" stroke-width="3.5" x1="174" x2="138" y1="349" y2="403"/>
+  <line stroke="#35485E" stroke-linecap="round" stroke-width="3.5" x1="174" x2="210" y1="349" y2="403"/>
+  <text fill="#18334B" font-family="Noto Sans CJK JP, Meiryo, Yu Gothic, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" x="174" y="448">在庫管理担当者</text>
+  <ellipse cx="692" cy="194" fill="#EAF4FC" rx="210" ry="41" stroke="#1B587C" stroke-width="2.3"/>
+  <text fill="#496882" font-family="Noto Sans CJK JP, Meiryo, Yu Gothic, sans-serif" font-size="15" text-anchor="middle" x="692" y="187">UC-01</text>
+  <text fill="#18334B" font-family="Noto Sans CJK JP, Meiryo, Yu Gothic, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" x="692" y="213">在庫一覧を表示する</text>
+  <ellipse cx="692" cy="296" fill="#EAF4FC" rx="210" ry="41" stroke="#1B587C" stroke-width="2.3"/>
+  <text fill="#496882" font-family="Noto Sans CJK JP, Meiryo, Yu Gothic, sans-serif" font-size="15" text-anchor="middle" x="692" y="289">UC-02</text>
+  <text fill="#18334B" font-family="Noto Sans CJK JP, Meiryo, Yu Gothic, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" x="692" y="315">在庫を登録する</text>
+  <ellipse cx="692" cy="398" fill="#EAF4FC" rx="210" ry="41" stroke="#1B587C" stroke-width="2.3"/>
+  <text fill="#496882" font-family="Noto Sans CJK JP, Meiryo, Yu Gothic, sans-serif" font-size="15" text-anchor="middle" x="692" y="391">UC-03</text>
+  <text fill="#18334B" font-family="Noto Sans CJK JP, Meiryo, Yu Gothic, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" x="692" y="417">在庫を更新する</text>
+  <ellipse cx="692" cy="500" fill="#EAF4FC" rx="210" ry="41" stroke="#1B587C" stroke-width="2.3"/>
+  <text fill="#496882" font-family="Noto Sans CJK JP, Meiryo, Yu Gothic, sans-serif" font-size="15" text-anchor="middle" x="692" y="493">UC-04</text>
+  <text fill="#18334B" font-family="Noto Sans CJK JP, Meiryo, Yu Gothic, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" x="692" y="519">在庫を削除する</text>
+</svg>
