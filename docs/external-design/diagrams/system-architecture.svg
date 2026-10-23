@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="800" viewBox="0 0 1500 800" role="img" aria-label="システム構成図">
+<defs>
+<marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#557AAB"/></marker>
+<marker id="arr-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#3B968E"/></marker>
+</defs>
+<rect width="1500" height="800" fill="#F9FBFE"/>
+<text x="64" y="82" font-family="Noto Sans CJK JP, sans-serif" font-size="43" font-weight="700" fill="#243348">システム構成図</text>
+<text x="67" y="122" font-family="Noto Sans CJK JP, sans-serif" font-size="21" fill="#54657B">Issue #7｜在庫管理Webアプリケーション／ローカル学習環境</text>
+<rect x="42" y="148" width="1416" height="484" rx="28" fill="#EEF3F9" stroke="#D4DFEB" stroke-width="1.5"/>
+<text x="82" y="200" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="24" fill="#243348" font-weight="500">学習用PC上で利用するWebアプリケーション</text>
+<rect x="62" y="555" width="665" height="153" rx="16" fill="#FFFFFF" stroke="#D4DFEB" stroke-width="1.5"/>
+<rect x="753" y="555" width="685" height="153" rx="16" fill="#FFFFFF" stroke="#D4DFEB" stroke-width="1.5"/>
+<text x="86" y="600" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="25" fill="#243348" font-weight="700">役割分担</text>
+<text x="87" y="635" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="20" fill="#54657B" font-weight="500">ブラウザ：表示・入力／Java：判定・処理／DB：永続化</text>
+<text x="779" y="600" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="25" fill="#243348" font-weight="700">利用条件</text>
+<text x="781" y="634" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="19" fill="#54657B" font-weight="500">ローカル利用・認証なし・インターネット一般公開なし</text>
+<text x="68" y="762" text-anchor="start" font-family="Noto Sans CJK JP, sans-serif" font-size="20" fill="#54657B" font-weight="500">※ Java 17、Tomcat 10.1、Servlet / JSP、JDBCはIssue #7での採用案。レビューで確定する。</text>
+<line x1="305" y1="376" x2="406" y2="376" stroke="#557AAB" stroke-width="3" stroke-linecap="round" marker-end="url(#arr)"/>
+<line x1="666" y1="376" x2="785" y2="376" stroke="#557AAB" stroke-width="3" stroke-linecap="round" marker-start="url(#arr)" marker-end="url(#arr)"/>
+<line x1="1101" y1="376" x2="1238" y2="376" stroke="#557AAB" stroke-width="3" stroke-linecap="round" marker-start="url(#arr)" marker-end="url(#arr)"/>
+<rect x="65" y="260" width="240" height="230" rx="8" fill="#FFFFFF" stroke="#3B968E" stroke-width="2.4"/>
+<text x="185.0" y="370.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="26" font-weight="700" fill="#243348">在庫管理担当者</text>
+<text x="185.0" y="470" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="18" fill="#54657B">アプリの利用者</text>
+<rect x="406" y="260" width="260" height="230" rx="19" fill="#E7F1FF" stroke="#4484BE" stroke-width="2.4"/>
+<text x="536.0" y="370.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="27" font-weight="700" fill="#243348">Webブラウザ</text>
+<text x="536.0" y="470" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="18" fill="#54657B">画面の表示・操作</text>
+<rect x="785" y="233" width="316" height="286" rx="19" fill="#DFF5EF" stroke="#3B968E" stroke-width="2.4"/>
+<text x="943.0" y="348.5" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="29" font-weight="700" fill="#243348">Java Webアプリ</text>
+<text x="943.0" y="393.5" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="29" font-weight="700" fill="#243348">Apache Tomcat</text>
+<text x="943.0" y="499" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="18" fill="#54657B">Servlet / JSP・JDBC</text>
+<rect x="1238" y="273" width="220" height="202" fill="#F0EAFA" stroke="#8B71BA" stroke-width="2.4"/><ellipse cx="1348.0" cy="273" rx="110.0" ry="13" fill="#F0EAFA" stroke="#8B71BA" stroke-width="2.4"/><path d="M 1238 474 A 110.0 14 0 0 0 1458 474" fill="none" stroke="#8B71BA" stroke-width="2.4"/>
+<text x="1348.0" y="370.0" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="29" font-weight="700" fill="#243348">PostgreSQL</text>
+<text x="1348.0" y="470" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="18" fill="#54657B">在庫情報を保存</text>
+<rect x="310.7" y="326" width="88.6" height="30" rx="9" fill="#F9FBFE" opacity="0.97"/>
+<text x="355" y="348" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="17" fill="#243348">画面操作</text>
+<rect x="623.2" y="326" width="201.7" height="30" rx="9" fill="#F9FBFE" opacity="0.97"/>
+<text x="724" y="348" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="17" fill="#243348">HTTP（要求・応答）</text>
+<rect x="1077.2" y="326" width="185.5" height="30" rx="9" fill="#F9FBFE" opacity="0.97"/>
+<text x="1170" y="348" text-anchor="middle" font-family="Noto Sans CJK JP, sans-serif" font-size="17" fill="#243348">JDBC / SQL</text>
+</svg>
