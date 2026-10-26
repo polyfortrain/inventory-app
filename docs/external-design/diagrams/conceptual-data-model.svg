@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="505" viewBox="0 0 900 505" role="img">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#58789A"/></marker><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#567491" flood-opacity="0.09"/></filter></defs><rect width="900" height="505" fill="#FFFFFF"/><text x="65" y="78" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="36" font-weight="700" fill="#263549" text-anchor="start" >概念データモデル</text>
+<path d="M65 103 H835" stroke="#DFE7F1" stroke-width="2" />
+<rect x="225" y="145" width="450" height="293" rx="16" fill="#FFFFFF" stroke="#5786C4" stroke-width="2.5"/>
+<path d="M241 145 H659 Q675 145 675 161 V226 H225 V161 Q225 145 241 145 Z" fill="#EAF3FF"/>
+<text x="450" y="197" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="35" font-weight="700" fill="#263549" text-anchor="middle" >在庫</text>
+<circle cx="282" cy="263" r="6" fill="#5E89BE"/>
+<text x="312" y="272" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="27" font-weight="500" fill="#263549" text-anchor="start" >在庫ID</text>
+<path d="M247 297 H653" stroke="#E2E9F3" stroke-width="2"/>
+<circle cx="282" cy="334" r="6" fill="#5E89BE"/>
+<text x="312" y="343" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="27" font-weight="500" fill="#263549" text-anchor="start" >在庫名</text>
+<path d="M247 368 H653" stroke="#E2E9F3" stroke-width="2"/>
+<circle cx="282" cy="405" r="6" fill="#5E89BE"/>
+<text x="312" y="414" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="27" font-weight="500" fill="#263549" text-anchor="start" >数量</text></svg>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram name="概念データモデル" id="-">
+    <mxGraphModel dx="900" dy="505" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="505" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="概念データモデル" style="text;html=0;whiteSpace=wrap;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;fontSize=34;fontStyle=1;fontFamily=Noto Sans CJK JP;fontColor=#263549;" vertex="1" parent="1">
+          <mxGeometry x="65" y="45" width="770" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="entity-header" value="在庫" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#EDF5FF;strokeColor=#5E89BE;strokeWidth=2;align=center;verticalAlign=middle;fontSize=33;fontStyle=1;fontFamily=Noto Sans CJK JP;fontColor=#263549;spacing=14;" vertex="1" parent="1">
+          <mxGeometry x="225" y="145" width="450" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="attribute-1" value="在庫ID" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#CFDDEC;strokeWidth=1;align=left;verticalAlign=middle;fontSize=27;fontStyle=0;fontFamily=Noto Sans CJK JP;fontColor=#263549;spacing=32;" vertex="1" parent="1">
+          <mxGeometry x="225" y="225" width="450" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="attribute-2" value="在庫名" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#CFDDEC;strokeWidth=1;align=left;verticalAlign=middle;fontSize=27;fontStyle=0;fontFamily=Noto Sans CJK JP;fontColor=#263549;spacing=32;" vertex="1" parent="1">
+          <mxGeometry x="225" y="296" width="450" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="attribute-3" value="数量" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#CFDDEC;strokeWidth=1;align=left;verticalAlign=middle;fontSize=27;fontStyle=0;fontFamily=Noto Sans CJK JP;fontColor=#263549;spacing=32;" vertex="1" parent="1">
+          <mxGeometry x="225" y="367" width="450" height="71" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
