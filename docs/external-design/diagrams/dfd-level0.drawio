@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram name="DFD レベル0" id="simple-DFD-レベル0">
+    <mxGraphModel dx="1080" dy="420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1080" pageHeight="420" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="DFD レベル0" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=34;fontFamily=Noto Sans CJK JP;fontStyle=1;fontColor=#263549;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="50" y="35" width="420" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="actor" value="在庫管理担当者" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F0FBF8;strokeColor=#319B91;strokeWidth=2;align=center;verticalAlign=middle;fontSize=25;fontStyle=1;fontFamily=Noto Sans CJK JP;fontColor=#263549;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="66" y="151" width="260" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="sys" value="0  在庫管理システム" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ECF4FE;strokeColor=#5786C4;strokeWidth=2;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;fontFamily=Noto Sans CJK JP;fontColor=#263549;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="746" y="151" width="268" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_in" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#647D99;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="326" y="204" as="sourcePoint" />
+            <mxPoint x="746" y="204" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flowinlabel" value="操作・入力情報" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=19;fontFamily=Noto Sans CJK JP;fontStyle=0;fontColor=#263549;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="455" y="157" width="161" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_out" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#647D99;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="746" y="268" as="sourcePoint" />
+            <mxPoint x="326" y="268" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flowoutlabel" value="在庫一覧・確認・結果" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=18;fontFamily=Noto Sans CJK JP;fontStyle=0;fontColor=#263549;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="430" y="271" width="215" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
