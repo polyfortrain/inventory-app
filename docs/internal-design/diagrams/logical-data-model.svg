@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="625" viewBox="0 0 1020 625" role="img">
+<rect width="1020" height="625" fill="#FFFFFF"/>
+<text x="64" y="83" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="38" font-weight="700" text-anchor="start" letter-spacing="0">論理データモデル</text>
+<path d="M64,110 H956" stroke="#DCE6F1" stroke-width="1.3" />
+<text x="65" y="146" fill="#5E6F80" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="19" font-weight="400" text-anchor="start" letter-spacing="0">エンティティと属性</text>
+<rect x="128" y="181" width="764" height="376" rx="16" fill="#FFFFFF" stroke="#87A9CF" stroke-width="2"/>
+<rect x="128" y="181" width="764" height="84" rx="16" fill="#EAF3FD" stroke="#87A9CF" stroke-width="2"/>
+<rect x="129" y="241" width="762" height="24" fill="#EAF3FD"/>
+<text x="173" y="237" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="29" font-weight="700" text-anchor="start" letter-spacing="0">在庫</text>
+<rect x="159" y="285" width="702" height="48" rx="5" fill="#F4F7FB" stroke="#F4F7FB" stroke-width="0"/>
+<text x="184" y="317" fill="#5E6F80" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="18" font-weight="700" text-anchor="start" letter-spacing="0">属性</text>
+<text x="438" y="317" fill="#5E6F80" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="18" font-weight="700" text-anchor="start" letter-spacing="0">識別</text>
+<text x="548" y="317" fill="#5E6F80" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="18" font-weight="700" text-anchor="start" letter-spacing="0">条件</text>
+<path d="M159,341 H861" stroke="#DCE6F1" stroke-width="1.3" />
+<text x="182" y="387" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">在庫ID</text>
+<rect x="435" y="360" width="56" height="34" rx="6" fill="#E3F3EA" stroke="#E3F3EA" stroke-width="0"/>
+<text x="463" y="384" fill="#26724B" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="17" font-weight="700" text-anchor="middle" letter-spacing="0">PK</text>
+<text x="548" y="386" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="19" font-weight="400" text-anchor="start" letter-spacing="0">自動採番・変更不可</text>
+<path d="M159,412 H861" stroke="#DCE6F1" stroke-width="1.3" />
+<text x="182" y="454" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="25" font-weight="600" text-anchor="start" letter-spacing="0">在庫名</text>
+<text x="548" y="452" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="19" font-weight="400" text-anchor="start" letter-spacing="0">必須・1〜100文字</text>
+<path d="M159,481 H861" stroke="#DCE6F1" stroke-width="1.3" />
+<text x="182" y="523" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="25" font-weight="600" text-anchor="start" letter-spacing="0">数量</text>
+<text x="548" y="521" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="19" font-weight="400" text-anchor="start" letter-spacing="0">必須・0〜999,999の整数</text>
+</svg>
