@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="770" viewBox="0 0 1200 770" role="img" aria-label="DFD レベル1">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#647D99"/></marker></defs>
+<rect width="1200" height="770" fill="#FFFFFF"/>
+<text x="50" y="71" font-size="34" font-weight="700" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="start">DFD レベル1</text>
+<rect x="48" y="147" width="220" height="525" rx="5" fill="#F0FBF8" stroke="#319B91" stroke-width="2.2"/>
+<rect x="948" y="147" width="202" height="525" rx="2" fill="#F5EEFF" stroke="#997BCF" stroke-width="2.2"/>
+<text x="158.0" y="385" font-size="26" font-weight="700" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="middle">在庫管理</text>
+<text x="158.0" y="423" font-size="26" font-weight="700" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="middle">担当者</text>
+<text x="1049.0" y="380" font-size="26" font-weight="700" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="middle">D1</text>
+<text x="1049.0" y="422" font-size="26" font-weight="700" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="middle">在庫情報</text>
+<rect x="467" y="159" width="258" height="94" rx="12" fill="#ECF4FE" stroke="#5786C4" stroke-width="2.2"/>
+<text x="596.0" y="216" font-size="25" font-weight="700" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="middle">1.0  在庫一覧</text>
+<path d="M 268 187 L 467 187" stroke="#647D99" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+<text x="367.5" y="177" font-size="16" font-weight="400" font-family="Noto Sans CJK JP, sans-serif" fill="#63758A" text-anchor="middle">一覧要求</text>
+<path d="M 467 225 L 268 225" stroke="#647D99" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+<text x="367.5" y="248" font-size="16" font-weight="400" font-family="Noto Sans CJK JP, sans-serif" fill="#63758A" text-anchor="middle">在庫一覧</text>
+<path d="M 948 206 L 725 206" stroke="#647D99" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+<text x="836.5" y="193" font-size="16" font-weight="400" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="#63758A">在庫情報</text>
+<rect x="467" y="280" width="258" height="94" rx="12" fill="#ECF4FE" stroke="#5786C4" stroke-width="2.2"/>
+<text x="596.0" y="337" font-size="25" font-weight="700" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="middle">2.0  在庫登録</text>
+<path d="M 268 308 L 467 308" stroke="#647D99" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+<text x="367.5" y="298" font-size="16" font-weight="400" font-family="Noto Sans CJK JP, sans-serif" fill="#63758A" text-anchor="middle">登録情報</text>
+<path d="M 467 346 L 268 346" stroke="#647D99" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+<text x="367.5" y="369" font-size="16" font-weight="400" font-family="Noto Sans CJK JP, sans-serif" fill="#63758A" text-anchor="middle">登録結果</text>
+<path d="M 725 327 L 948 327" stroke="#647D99" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+<text x="836.5" y="314" font-size="16" font-weight="400" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="#63758A">新規在庫</text>
+<rect x="467" y="401" width="258" height="94" rx="12" fill="#ECF4FE" stroke="#5786C4" stroke-width="2.2"/>
+<text x="596.0" y="458" font-size="25" font-weight="700" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="middle">3.0  在庫更新</text>
+<path d="M 268 429 L 467 429" stroke="#647D99" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+<text x="367.5" y="419" font-size="16" font-weight="400" font-family="Noto Sans CJK JP, sans-serif" fill="#63758A" text-anchor="middle">更新情報</text>
+<path d="M 467 467 L 268 467" stroke="#647D99" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+<text x="367.5" y="490" font-size="16" font-weight="400" font-family="Noto Sans CJK JP, sans-serif" fill="#63758A" text-anchor="middle">更新結果</text>
+<path d="M 948 429 L 725 429" stroke="#647D99" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+<text x="836.5" y="419" font-size="16" font-weight="400" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="#63758A">対象在庫</text>
+<path d="M 725 467 L 948 467" stroke="#647D99" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+<text x="836.5" y="490" font-size="16" font-weight="400" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="#63758A">更新データ</text>
+<rect x="467" y="522" width="258" height="94" rx="12" fill="#ECF4FE" stroke="#5786C4" stroke-width="2.2"/>
+<text x="596.0" y="579" font-size="25" font-weight="700" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="middle">4.0  在庫削除</text>
+<path d="M 268 550 L 467 550" stroke="#647D99" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+<text x="367.5" y="540" font-size="16" font-weight="400" font-family="Noto Sans CJK JP, sans-serif" fill="#63758A" text-anchor="middle">削除指示・承認</text>
+<path d="M 467 588 L 268 588" stroke="#647D99" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+<text x="367.5" y="611" font-size="16" font-weight="400" font-family="Noto Sans CJK JP, sans-serif" fill="#63758A" text-anchor="middle">確認・結果</text>
+<path d="M 948 550 L 725 550" stroke="#647D99" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+<text x="836.5" y="540" font-size="16" font-weight="400" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="#63758A">対象在庫</text>
+<path d="M 725 588 L 948 588" stroke="#647D99" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+<text x="836.5" y="611" font-size="16" font-weight="400" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="#63758A">削除データ</text>
+</svg>

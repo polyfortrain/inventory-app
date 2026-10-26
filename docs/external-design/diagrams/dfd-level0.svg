@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="420" viewBox="0 0 1080 420" role="img" aria-label="DFD レベル0">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#647D99"/></marker></defs>
+<rect width="1080" height="420" fill="#FFFFFF"/>
+<text x="52" y="70" font-size="34" font-weight="700" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="start">DFD レベル0</text>
+<rect x="66" y="151" width="260" height="164" rx="5" fill="#F0FBF8" stroke="#319B91" stroke-width="2.2"/>
+<rect x="746" y="151" width="268" height="164" rx="12" fill="#ECF4FE" stroke="#5786C4" stroke-width="2.2"/>
+<text x="196.0" y="243" font-size="26" font-weight="700" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="middle">在庫管理担当者</text>
+<text x="880.0" y="243" font-size="25" font-weight="700" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="middle">0  在庫管理システム</text>
+<path d="M 326 204 L 746 204" stroke="#647D99" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+<text x="535" y="188" font-size="20" font-weight="400" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="middle">操作・入力情報</text>
+<path d="M 746 268 L 326 268" stroke="#647D99" stroke-width="2" stroke-linecap="round" fill="none" marker-end="url(#arr)"/>
+<text x="535" y="301" font-size="20" font-weight="400" font-family="Noto Sans CJK JP, sans-serif" fill="#263549" text-anchor="middle">在庫一覧・確認・結果</text>
+</svg>

@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram name="DFD レベル1" id="simple-DFD-レベル1">
+    <mxGraphModel dx="1200" dy="770" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="770" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="DFD レベル1" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=34;fontFamily=Noto Sans CJK JP;fontStyle=1;fontColor=#263549;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="48" y="35" width="420" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="actor" value="在庫管理&#10;担当者" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F0FBF8;strokeColor=#319B91;strokeWidth=2;align=center;verticalAlign=middle;fontSize=25;fontStyle=1;fontFamily=Noto Sans CJK JP;fontColor=#263549;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="48" y="147" width="220" height="525" as="geometry" />
+        </mxCell>
+        <mxCell id="store" value="D1&#10;在庫情報" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F5EEFF;strokeColor=#997BCF;strokeWidth=2;align=center;verticalAlign=middle;fontSize=25;fontStyle=1;fontFamily=Noto Sans CJK JP;fontColor=#263549;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="948" y="147" width="202" height="525" as="geometry" />
+        </mxCell>
+        <mxCell id="process1" value="1.0  在庫一覧" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ECF4FE;strokeColor=#5786C4;strokeWidth=2;align=center;verticalAlign=middle;fontSize=25;fontStyle=1;fontFamily=Noto Sans CJK JP;fontColor=#263549;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="467" y="159" width="258" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_0_forward" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#647D99;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="268" y="187" as="sourcePoint" />
+            <mxPoint x="467" y="187" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="actorlabel_0_forward" value="一覧要求" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=16;fontFamily=Noto Sans CJK JP;fontStyle=0;fontColor=#63758A;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="273" y="149" width="189" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_0_back" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#647D99;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="467" y="225" as="sourcePoint" />
+            <mxPoint x="268" y="225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="actorlabel_0_back" value="在庫一覧" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=16;fontFamily=Noto Sans CJK JP;fontStyle=0;fontColor=#63758A;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="273" y="229" width="189" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="store_0_back" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#647D99;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="948" y="206" as="sourcePoint" />
+            <mxPoint x="725" y="206" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="storelabel_0_back" value="在庫情報" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=16;fontFamily=Noto Sans CJK JP;fontStyle=0;fontColor=#63758A;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="734" y="168" width="204" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="process2" value="2.0  在庫登録" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ECF4FE;strokeColor=#5786C4;strokeWidth=2;align=center;verticalAlign=middle;fontSize=25;fontStyle=1;fontFamily=Noto Sans CJK JP;fontColor=#263549;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="467" y="280" width="258" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_1_forward" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#647D99;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="268" y="308" as="sourcePoint" />
+            <mxPoint x="467" y="308" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="actorlabel_1_forward" value="登録情報" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=16;fontFamily=Noto Sans CJK JP;fontStyle=0;fontColor=#63758A;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="273" y="270" width="189" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_1_back" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#647D99;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="467" y="346" as="sourcePoint" />
+            <mxPoint x="268" y="346" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="actorlabel_1_back" value="登録結果" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=16;fontFamily=Noto Sans CJK JP;fontStyle=0;fontColor=#63758A;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="273" y="350" width="189" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="store_1_forward" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#647D99;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="725" y="327" as="sourcePoint" />
+            <mxPoint x="948" y="327" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="storelabel_1_forward" value="新規在庫" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=16;fontFamily=Noto Sans CJK JP;fontStyle=0;fontColor=#63758A;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="734" y="289" width="204" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="process3" value="3.0  在庫更新" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ECF4FE;strokeColor=#5786C4;strokeWidth=2;align=center;verticalAlign=middle;fontSize=25;fontStyle=1;fontFamily=Noto Sans CJK JP;fontColor=#263549;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="467" y="401" width="258" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_2_forward" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#647D99;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="268" y="429" as="sourcePoint" />
+            <mxPoint x="467" y="429" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="actorlabel_2_forward" value="更新情報" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=16;fontFamily=Noto Sans CJK JP;fontStyle=0;fontColor=#63758A;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="273" y="391" width="189" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_2_back" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#647D99;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="467" y="467" as="sourcePoint" />
+            <mxPoint x="268" y="467" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="actorlabel_2_back" value="更新結果" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=16;fontFamily=Noto Sans CJK JP;fontStyle=0;fontColor=#63758A;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="273" y="471" width="189" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="store_2_back" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#647D99;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="948" y="429" as="sourcePoint" />
+            <mxPoint x="725" y="429" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="storelabel_2_back" value="対象在庫" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=16;fontFamily=Noto Sans CJK JP;fontStyle=0;fontColor=#63758A;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="734" y="391" width="204" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="store_2_forward" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#647D99;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="725" y="467" as="sourcePoint" />
+            <mxPoint x="948" y="467" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="storelabel_2_forward" value="更新データ" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=16;fontFamily=Noto Sans CJK JP;fontStyle=0;fontColor=#63758A;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="734" y="471" width="204" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="process4" value="4.0  在庫削除" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ECF4FE;strokeColor=#5786C4;strokeWidth=2;align=center;verticalAlign=middle;fontSize=25;fontStyle=1;fontFamily=Noto Sans CJK JP;fontColor=#263549;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="467" y="522" width="258" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_3_forward" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#647D99;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="268" y="550" as="sourcePoint" />
+            <mxPoint x="467" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="actorlabel_3_forward" value="削除指示・承認" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=16;fontFamily=Noto Sans CJK JP;fontStyle=0;fontColor=#63758A;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="273" y="512" width="189" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_3_back" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#647D99;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="467" y="588" as="sourcePoint" />
+            <mxPoint x="268" y="588" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="actorlabel_3_back" value="確認・結果" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=16;fontFamily=Noto Sans CJK JP;fontStyle=0;fontColor=#63758A;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="273" y="592" width="189" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="store_3_back" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#647D99;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="948" y="550" as="sourcePoint" />
+            <mxPoint x="725" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="storelabel_3_back" value="対象在庫" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=16;fontFamily=Noto Sans CJK JP;fontStyle=0;fontColor=#63758A;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="734" y="512" width="204" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="store_3_forward" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#647D99;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="725" y="588" as="sourcePoint" />
+            <mxPoint x="948" y="588" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="storelabel_3_forward" value="削除データ" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;fontSize=16;fontFamily=Noto Sans CJK JP;fontStyle=0;fontColor=#63758A;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="734" y="592" width="204" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
