@@ -15,3 +15,5 @@
 - CHANGELOGの追加
 - システム構成図の追加（Issue #7）
 - DFDの追加（Issue #8）
+- 概念DM図作成（Issue #9）
+- 画面遷移図を追加（Issue #10）
