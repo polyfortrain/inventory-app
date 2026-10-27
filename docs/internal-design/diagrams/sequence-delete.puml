@@ -14,7 +14,7 @@ else 削除を承認
   Browser -> Servlet: POST /inventory/delete (id)
   Servlet -> Service: delete(id)
   Service -> Dao: deleteById(id)
-  Dao -> DB: DELETE FROM inventory WHERE inventory_id = ?
+  Dao -> DB: DELETE FROM inventory WHERE id = ?
   DB --> Dao: 削除件数（0 または 1）
   Dao --> Service: 成功/対象なし
   Service --> Servlet: true/false

@@ -17,9 +17,9 @@ alt 入力が不正
 else 入力が正常
   Service -> Dao: insert(name, quantity)
   Dao -> DB: INSERT INTO inventory (...)
-  DB --> Dao: 新しいinventory_id
-  Dao --> Service: inventory_id
-  Service --> Servlet: inventory_id
+  DB --> Dao: 新しいid
+  Dao --> Service: id
+  Service --> Servlet: id
   Servlet --> Browser: リダイレクト（在庫一覧）
 end
 @enduml

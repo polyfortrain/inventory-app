@@ -13,8 +13,8 @@
 
 | カラム | PostgreSQLデータ型 | 制約・設定 |
 |---|---|---|
-| `inventory_id` | `INTEGER` | 主キー・自動採番（`GENERATED ALWAYS AS IDENTITY`） |
-| `inventory_name` | `VARCHAR(100)` | `NOT NULL`、空文字・空白のみの値を禁止するCHECK |
+| `id` | `INTEGER` | 主キー・自動採番（`GENERATED ALWAYS AS IDENTITY`） |
+| `name` | `VARCHAR(100)` | `NOT NULL`、空文字・空白のみの値を禁止するCHECK |
 | `quantity` | `INTEGER` | `NOT NULL`、0〜999,999のCHECK |
 
 - 在庫IDはシステムが割り当て、在庫名・数量は必須とする。

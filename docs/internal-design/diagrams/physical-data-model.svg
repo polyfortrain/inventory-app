@@ -13,11 +13,11 @@
 <text x="474" y="274" fill="#5E6F80" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="18" font-weight="700" text-anchor="start" letter-spacing="0">データ型</text>
 <text x="730" y="274" fill="#5E6F80" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="18" font-weight="700" text-anchor="start" letter-spacing="0">設定</text>
 <path d="M104,295 H1055" stroke="#DCE6F1" stroke-width="1.3" />
-<text x="128" y="341" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="23" font-weight="600" text-anchor="start" letter-spacing="0">inventory_id</text>
+<text x="128" y="341" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="23" font-weight="600" text-anchor="start" letter-spacing="0">id</text>
 <text x="474" y="341" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="22" font-weight="400" text-anchor="start" letter-spacing="0">INTEGER</text>
 <text x="730" y="341" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="20" font-weight="400" text-anchor="start" letter-spacing="0">PK / IDENTITY（自動採番）</text>
 <path d="M104,363 H1055" stroke="#DCE6F1" stroke-width="1.3" />
-<text x="128" y="413" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="23" font-weight="600" text-anchor="start" letter-spacing="0">inventory_name</text>
+<text x="128" y="413" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="23" font-weight="600" text-anchor="start" letter-spacing="0">name</text>
 <text x="474" y="413" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="22" font-weight="400" text-anchor="start" letter-spacing="0">VARCHAR(100)</text>
 <text x="730" y="413" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="20" font-weight="400" text-anchor="start" letter-spacing="0">NOT NULL</text>
 <path d="M104,435 H1055" stroke="#DCE6F1" stroke-width="1.3" />
@@ -26,6 +26,6 @@
 <text x="730" y="486" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="20" font-weight="400" text-anchor="start" letter-spacing="0">NOT NULL</text>
 <rect x="75" y="545" width="1010" height="126" rx="12" fill="#F8FAFD" stroke="#DEE8F2" stroke-width="1.5"/>
 <text x="109" y="583" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="21" font-weight="700" text-anchor="start" letter-spacing="0">入力値の制約（CHECK）</text>
-<text x="110" y="619" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="20" font-weight="400" text-anchor="start" letter-spacing="0">inventory_name : btrim(inventory_name) &lt;&gt; &#x27;&#x27;</text>
+<text x="110" y="619" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="20" font-weight="400" text-anchor="start" letter-spacing="0">name : name ~ '[^[:space:]]'</text>
 <text x="110" y="651" fill="#25364A" font-family="Noto Sans CJK JP, Yu Gothic, Meiryo, sans-serif" font-size="20" font-weight="400" text-anchor="start" letter-spacing="0">quantity : 0 &lt;= quantity &lt;= 999999</text>
 </svg>
