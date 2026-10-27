@@ -1,0 +1,27 @@
+@startuml
+!theme plain
+title UC-04 在庫削除 シーケンス図（設計案）
+actor "在庫管理担当者" as User
+participant "Webブラウザ" as Browser
+participant InventoryServlet as Servlet
+participant InventoryService as Service
+participant "JdbcInventoryDao" as Dao
+database PostgreSQL as DB
+User -> Browser: 削除確認に回答
+alt キャンセル
+  note over Browser: リクエストを送信しない
+else 削除を承認
+  Browser -> Servlet: POST /inventory/delete (id)
+  Servlet -> Service: delete(id)
+  Service -> Dao: deleteById(id)
+  Dao -> DB: DELETE FROM inventory WHERE inventory_id = ?
+  DB --> Dao: 削除件数（0 または 1）
+  Dao --> Service: 成功/対象なし
+  Service --> Servlet: true/false
+  alt 削除成功
+    Servlet --> Browser: リダイレクト（在庫一覧）
+  else 対象なし
+    Servlet --> Browser: エラー表示（変更なし）
+  end
+end
+@enduml

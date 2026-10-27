@@ -1,0 +1,34 @@
+@startuml
+!theme plain
+title 在庫管理Webアプリケーション クラス図（設計案）
+skinparam classAttributeIconSize 0
+class InventoryServlet <<Controller>> {
+  +doGet(request, response): void
+  +doPost(request, response): void
+}
+class InventoryService <<Service>> {
+  +findAll(): List<Inventory>
+  +findById(id:int): Optional<Inventory>
+  +create(name:String, quantity:String): int
+  +update(id:int, name:String, quantity:String): boolean
+  +delete(id:int): boolean
+}
+class Inventory <<Model>> {
+  -id: int
+  -name: String
+  -quantity: int
+}
+interface InventoryDao <<DAO>> {
+  +findAll(): List<Inventory>
+  +findById(id:int): Optional<Inventory>
+  +insert(name:String, quantity:int): int
+  +update(id:int, name:String, quantity:int): boolean
+  +deleteById(id:int): boolean
+}
+class JdbcInventoryDao <<JDBC>>
+InventoryServlet --> InventoryService : 利用
+InventoryService --> InventoryDao : 利用
+JdbcInventoryDao ..|> InventoryDao : 実装
+InventoryService ..> Inventory : 扱う
+JdbcInventoryDao ..> Inventory : マッピング
+@enduml
