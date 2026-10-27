@@ -8,14 +8,14 @@
 |---|---|
 | テーブル名 | `inventory` |
 | 用途 | 在庫ID・在庫名・数量を保存する |
-| 主キー | `inventory_id` |
+| 主キー | `id` |
 
 ## 2. カラム定義
 
 | カラム名 | データ型 | NULL | 制約・設定 |
 |---|---|---|---|
-| `inventory_id` | `INTEGER` | 不可 | PK、`GENERATED ALWAYS AS IDENTITY` |
-| `inventory_name` | `VARCHAR(100)` | 不可 | 1〜100文字、空白のみ禁止 |
+| `id` | `INTEGER` | 不可 | PK、`GENERATED ALWAYS AS IDENTITY` |
+| `name` | `VARCHAR(100)` | 不可 | 1〜100文字、空白のみ禁止 |
 | `quantity` | `INTEGER` | 不可 | `CHECK (quantity BETWEEN 0 AND 999999)` |
 
 - 在庫名の重複は許容する（UNIQUE制約なし）。
