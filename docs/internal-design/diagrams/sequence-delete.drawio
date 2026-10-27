@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-10-26T00:00:00.000Z" agent="ChatGPT" version="24.7.10" type="device">
+  <diagram name="Page-1" id="pg1">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1450" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="在庫削除（UC-04）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=28;fontStyle=1;fontColor=#21354e;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="18" width="1180" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="actor0" value="ブラウザ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#edf4ff;strokeColor=#8da4be;fontSize=18;fontColor=#21354e;" vertex="1" parent="1">
+          <mxGeometry x="16" y="100" width="200" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="life0" value="" style="rounded=0;fillColor=#b5c8dc;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="114" y="156" width="4" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="actor1" value="InventoryServlet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#edf4ff;strokeColor=#8da4be;fontSize=18;fontColor=#21354e;" vertex="1" parent="1">
+          <mxGeometry x="266" y="100" width="200" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="life1" value="" style="rounded=0;fillColor=#b5c8dc;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="364" y="156" width="4" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="actor2" value="InventoryService" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#edf4ff;strokeColor=#8da4be;fontSize=18;fontColor=#21354e;" vertex="1" parent="1">
+          <mxGeometry x="530" y="100" width="200" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="life2" value="" style="rounded=0;fillColor=#b5c8dc;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="628" y="156" width="4" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="actor3" value="JdbcInventoryDao" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#edf4ff;strokeColor=#8da4be;fontSize=18;fontColor=#21354e;" vertex="1" parent="1">
+          <mxGeometry x="781" y="100" width="200" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="life3" value="" style="rounded=0;fillColor=#b5c8dc;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="879" y="156" width="4" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="actor4" value="PostgreSQL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#edf4ff;strokeColor=#8da4be;fontSize=18;fontColor=#21354e;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="100" width="200" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="life4" value="" style="rounded=0;fillColor=#b5c8dc;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1148" y="156" width="4" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="note" value="キャンセル時は削除POSTを送信しない" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e9;strokeColor=#e4cc9d;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="65" y="183" width="1160" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="alt1" value="削除成功" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f1fbf7;strokeColor=#a6d9c3;opacity=65;align=left;verticalAlign=top;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="50" y="750" width="1200" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="alt2" value="対象なし" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8f8;strokeColor=#e5adad;opacity=65;align=left;verticalAlign=top;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="50" y="855" width="1200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="txt0" value="POST /inventory/delete" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontColor=#21354e;align=center;" vertex="1" parent="1">
+          <mxGeometry x="131" y="273" width="220" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="ln0" value="" style="endArrow=block;endFill=1;strokeColor=#3475b9;strokeWidth=2;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="116" y="307" as="sourcePoint" />
+            <mxPoint x="366" y="307" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="txt1" value="delete(id)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontColor=#21354e;align=center;" vertex="1" parent="1">
+          <mxGeometry x="381" y="343" width="234" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="ln1" value="" style="endArrow=block;endFill=1;strokeColor=#3475b9;strokeWidth=2;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="366" y="377" as="sourcePoint" />
+            <mxPoint x="630" y="377" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="txt2" value="deleteById(id)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontColor=#21354e;align=center;" vertex="1" parent="1">
+          <mxGeometry x="645" y="405" width="221" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="ln2" value="" style="endArrow=block;endFill=1;strokeColor=#3475b9;strokeWidth=2;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="439" as="sourcePoint" />
+            <mxPoint x="881" y="439" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="txt3" value="DELETE WHERE inventory_id = ?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontColor=#21354e;align=center;" vertex="1" parent="1">
+          <mxGeometry x="896" y="477" width="239" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="ln3" value="" style="endArrow=block;endFill=1;strokeColor=#3475b9;strokeWidth=2;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="881" y="511" as="sourcePoint" />
+            <mxPoint x="1150" y="511" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="txt4" value="削除件数" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontColor=#21354e;align=center;" vertex="1" parent="1">
+          <mxGeometry x="896" y="541" width="239" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="ln4" value="" style="endArrow=block;endFill=1;strokeColor=#7389a1;strokeWidth=2;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1150" y="575" as="sourcePoint" />
+            <mxPoint x="881" y="575" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="txt5" value="true/false" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontColor=#21354e;align=center;" vertex="1" parent="1">
+          <mxGeometry x="645" y="607" width="221" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="ln5" value="" style="endArrow=block;endFill=1;strokeColor=#7389a1;strokeWidth=2;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="881" y="641" as="sourcePoint" />
+            <mxPoint x="630" y="641" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="txt6" value="true/false" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontColor=#21354e;align=center;" vertex="1" parent="1">
+          <mxGeometry x="381" y="673" width="234" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="ln6" value="" style="endArrow=block;endFill=1;strokeColor=#7389a1;strokeWidth=2;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="707" as="sourcePoint" />
+            <mxPoint x="366" y="707" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="txt7" value="一覧へリダイレクト" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontColor=#21354e;align=center;" vertex="1" parent="1">
+          <mxGeometry x="131" y="777" width="220" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="ln7" value="" style="endArrow=block;endFill=1;strokeColor=#7389a1;strokeWidth=2;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="366" y="811" as="sourcePoint" />
+            <mxPoint x="116" y="811" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="txt8" value="エラー表示" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=16;fontColor=#21354e;align=center;" vertex="1" parent="1">
+          <mxGeometry x="131" y="881" width="220" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="ln8" value="" style="endArrow=block;endFill=1;strokeColor=#7389a1;strokeWidth=2;html=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="366" y="915" as="sourcePoint" />
+            <mxPoint x="116" y="915" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

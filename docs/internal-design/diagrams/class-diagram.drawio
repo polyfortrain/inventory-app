@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-10-26T00:00:00.000Z" agent="ChatGPT" version="24.7.10" type="device">
+  <diagram name="Page-1" id="pg1">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1450" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sv" value="&amp;lt;&amp;lt;Controller&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;InventoryServlet&lt;/b&gt;&lt;hr&gt;+ doGet(request, response)&lt;br&gt;+ doPost(request, response)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#edf4ff;strokeColor=#7f9cba;fontColor=#21354e;fontSize=16;spacing=12;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="55" y="145" width="298" height="212" as="geometry" />
+        </mxCell>
+        <mxCell id="svc" value="&amp;lt;&amp;lt;Service&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;InventoryService&lt;/b&gt;&lt;hr&gt;+ findAll()&lt;br&gt;+ findById(id)&lt;br&gt;+ create(name, quantity)&lt;br&gt;+ update(id, name, quantity)&lt;br&gt;+ delete(id)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e9f6f5;strokeColor=#7f9cba;fontColor=#21354e;fontSize=17;spacing=12;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="438" y="145" width="387" height="287" as="geometry" />
+        </mxCell>
+        <mxCell id="model" value="&amp;lt;&amp;lt;Model&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Inventory&lt;/b&gt;&lt;hr&gt;- id: int&lt;br&gt;- name: String&lt;br&gt;- quantity: int" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#edf4ff;strokeColor=#7f9cba;fontColor=#21354e;fontSize=16;spacing=12;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="918" y="145" width="340" height="219" as="geometry" />
+        </mxCell>
+        <mxCell id="dao" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;InventoryDao&lt;/b&gt;&lt;hr&gt;+ findAll(), findById(id)&lt;br&gt;+ insert(name, quantity)&lt;br&gt;+ update(id, name, quantity)&lt;br&gt;+ deleteById(id)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#edf4ff;strokeColor=#7f9cba;fontColor=#21354e;fontSize=16;spacing=12;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="438" y="526" width="387" height="214" as="geometry" />
+        </mxCell>
+        <mxCell id="jdbc" value="&amp;lt;&amp;lt;DAO実装&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;JdbcInventoryDao&lt;/b&gt;&lt;hr&gt;JDBCでinventoryへアクセス" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e9f6f5;strokeColor=#7f9cba;fontColor=#21354e;fontSize=17;spacing=12;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="918" y="526" width="340" height="169" as="geometry" />
+        </mxCell>
+        <mxCell id="edge0" value="利用" style="endArrow=block;html=1;rounded=1;strokeWidth=2;strokeColor=#3475b9;" edge="1" parent="1" source="sv" target="svc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" value="利用" style="endArrow=block;html=1;rounded=1;strokeWidth=2;strokeColor=#3475b9;" edge="1" parent="1" source="svc" target="dao">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" value="扱う" style="endArrow=block;html=1;rounded=1;strokeWidth=2;strokeColor=#3475b9;" edge="1" parent="1" source="svc" target="model">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" value="実装" style="endArrow=block;html=1;rounded=1;strokeWidth=2;strokeColor=#3475b9;dashed=1;" edge="1" parent="1" source="jdbc" target="dao">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" value="参照" style="endArrow=block;html=1;rounded=1;strokeWidth=2;strokeColor=#3475b9;dashed=1;" edge="1" parent="1" source="jdbc" target="model">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

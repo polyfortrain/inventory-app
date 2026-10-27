@@ -1,0 +1,25 @@
+@startuml
+!theme plain
+title UC-02 在庫登録 シーケンス図（設計案）
+actor "在庫管理担当者" as User
+participant "Webブラウザ" as Browser
+participant InventoryServlet as Servlet
+participant InventoryService as Service
+participant "JdbcInventoryDao" as Dao
+database PostgreSQL as DB
+User -> Browser: 在庫名・数量を入力し登録
+Browser -> Servlet: POST /inventory/create (name, quantity)
+Servlet -> Service: create(name, quantity)
+Service -> Service: 入力検証（FR-05）
+alt 入力が不正
+  Service --> Servlet: 入力エラー
+  Servlet --> Browser: 入力画面＋エラー表示
+else 入力が正常
+  Service -> Dao: insert(name, quantity)
+  Dao -> DB: INSERT INTO inventory (...)
+  DB --> Dao: 新しいinventory_id
+  Dao --> Service: inventory_id
+  Service --> Servlet: inventory_id
+  Servlet --> Browser: リダイレクト（在庫一覧）
+end
+@enduml
