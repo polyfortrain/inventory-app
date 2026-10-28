@@ -1,39 +1,153 @@
 <?xml version='1.0' encoding='utf-8'?>
-<mxfile host="app.diagrams.net" modified="2026-10-26T00:00:00.000Z" agent="ChatGPT" version="24.7.10" type="device">
-  <diagram name="Page-1" id="pg1">
-    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1450" pageHeight="1100" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="ChatGPT" version="24.7.10" type="device">
+  <diagram name="Page-1" id="inventory-v2">
+    <mxGraphModel dx="1600" dy="990" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="990" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="sv" value="&amp;lt;&amp;lt;Controller&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;InventoryServlet&lt;/b&gt;&lt;hr&gt;+ doGet(request, response)&lt;br&gt;+ doPost(request, response)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#edf4ff;strokeColor=#7f9cba;fontColor=#21354e;fontSize=16;spacing=12;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="55" y="145" width="298" height="212" as="geometry" />
+        <mxCell id="box1" value="在庫管理Webアプリケーション ｜ クラス図" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#243247;fontFamily=Noto Sans CJK JP;fontSize=32;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="56" y="24.96" width="850" height="49.6" as="geometry" />
         </mxCell>
-        <mxCell id="svc" value="&amp;lt;&amp;lt;Service&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;InventoryService&lt;/b&gt;&lt;hr&gt;+ findAll()&lt;br&gt;+ findById(id)&lt;br&gt;+ create(name, quantity)&lt;br&gt;+ update(id, name, quantity)&lt;br&gt;+ delete(id)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e9f6f5;strokeColor=#7f9cba;fontColor=#21354e;fontSize=17;spacing=12;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="438" y="145" width="387" height="287" as="geometry" />
+        <mxCell id="box2" value="MVC + DAO ／ Serviceなし   •   現行ソースと今後の実装計画を区別" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#53657B;fontFamily=Noto Sans CJK JP;fontSize=17;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="56" y="78.76" width="900" height="26.35" as="geometry" />
         </mxCell>
-        <mxCell id="model" value="&amp;lt;&amp;lt;Model&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Inventory&lt;/b&gt;&lt;hr&gt;- id: int&lt;br&gt;- name: String&lt;br&gt;- quantity: int" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#edf4ff;strokeColor=#7f9cba;fontColor=#21354e;fontSize=16;spacing=12;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="918" y="145" width="340" height="219" as="geometry" />
+        <mxCell id="edge3" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#DEE7F0;strokeWidth=2;endArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="56" y="119" as="sourcePoint" />
+            <mxPoint x="1540" y="119" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="dao" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;InventoryDao&lt;/b&gt;&lt;hr&gt;+ findAll(), findById(id)&lt;br&gt;+ insert(name, quantity)&lt;br&gt;+ update(id, name, quantity)&lt;br&gt;+ deleteById(id)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#edf4ff;strokeColor=#7f9cba;fontColor=#21354e;fontSize=16;spacing=12;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="438" y="526" width="387" height="214" as="geometry" />
+        <mxCell id="box4" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#F2F6FB;strokeColor=#B9CADC;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="48" y="148" width="425" height="720" as="geometry" />
         </mxCell>
-        <mxCell id="jdbc" value="&amp;lt;&amp;lt;DAO実装&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;JdbcInventoryDao&lt;/b&gt;&lt;hr&gt;JDBCでinventoryへアクセス" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e9f6f5;strokeColor=#7f9cba;fontColor=#21354e;fontSize=17;spacing=12;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="918" y="526" width="340" height="169" as="geometry" />
+        <mxCell id="box5" value="inventory.app.controller" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#2866A7;fontFamily=Noto Sans CJK JP;fontSize=21;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="74" y="162.88" width="390" height="32.550000000000004" as="geometry" />
         </mxCell>
-        <mxCell id="edge0" value="利用" style="endArrow=block;html=1;rounded=1;strokeWidth=2;strokeColor=#3475b9;" edge="1" parent="1" source="sv" target="svc">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="box6" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#F2F6FB;strokeColor=#B9CADC;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="514" y="148" width="1028" height="720" as="geometry" />
         </mxCell>
-        <mxCell id="edge1" value="利用" style="endArrow=block;html=1;rounded=1;strokeWidth=2;strokeColor=#3475b9;" edge="1" parent="1" source="svc" target="dao">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="box7" value="inventory.app.model" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#267B77;fontFamily=Noto Sans CJK JP;fontSize=21;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="541" y="162.88" width="420" height="32.550000000000004" as="geometry" />
         </mxCell>
-        <mxCell id="edge2" value="扱う" style="endArrow=block;html=1;rounded=1;strokeWidth=2;strokeColor=#3475b9;" edge="1" parent="1" source="svc" target="model">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="box8" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B9CADC;strokeWidth=1.4;" vertex="1" parent="1">
+          <mxGeometry x="539" y="211" width="462" height="618" as="geometry" />
         </mxCell>
-        <mxCell id="edge3" value="実装" style="endArrow=block;html=1;rounded=1;strokeWidth=2;strokeColor=#3475b9;dashed=1;" edge="1" parent="1" source="jdbc" target="dao">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="box9" value="model.dao" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#53657B;fontFamily=Noto Sans CJK JP;fontSize=19;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="225.32" width="193" height="29.45" as="geometry" />
         </mxCell>
-        <mxCell id="edge4" value="参照" style="endArrow=block;html=1;rounded=1;strokeWidth=2;strokeColor=#3475b9;dashed=1;" edge="1" parent="1" source="jdbc" target="model">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="box10" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B9CADC;strokeWidth=1.4;" vertex="1" parent="1">
+          <mxGeometry x="1027" y="211" width="488" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="box11" value="model.dto" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#53657B;fontFamily=Noto Sans CJK JP;fontSize=19;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="1048" y="225.32" width="193" height="29.45" as="geometry" />
+        </mxCell>
+        <mxCell id="box12" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B9CADC;strokeWidth=1.4;" vertex="1" parent="1">
+          <mxGeometry x="1027" y="528" width="488" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="box13" value="model.db" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#53657B;fontFamily=Noto Sans CJK JP;fontSize=19;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="1048" y="543.32" width="178" height="29.45" as="geometry" />
+        </mxCell>
+        <mxCell id="edge14" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#2866A7;strokeWidth=2.5;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="434" y="332" as="sourcePoint" />
+            <mxPoint x="552" y="332" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="box15" value="findAll()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#53657B;fontFamily=Noto Sans CJK JP;fontSize=15;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="403.5" y="298.2" width="135" height="23.25" as="geometry" />
+        </mxCell>
+        <mxCell id="edge16" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#8799AB;strokeWidth=2;dashed=1;dashPattern=5 4;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="434" y="580" as="sourcePoint" />
+            <mxPoint x="552" y="389" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="493" y="580" />
+              <mxPoint x="493" y="389" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="box17" value="予定" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#53657B;fontFamily=Noto Sans CJK JP;fontSize=14;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="440.5" y="539.92" width="65" height="21.7" as="geometry" />
+        </mxCell>
+        <mxCell id="edge18" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#2866A7;strokeWidth=2.4;dashed=1;dashPattern=5 4;endArrow=none;endArrow=block;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="765" y="538" as="sourcePoint" />
+            <mxPoint x="765" y="462" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="box19" value="implements" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#53657B;fontFamily=Noto Sans CJK JP;fontSize=14;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="782" y="491.92" width="169" height="21.7" as="geometry" />
+        </mxCell>
+        <mxCell id="edge20" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#8799AB;strokeWidth=2;dashed=1;dashPattern=5 4;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="404" as="sourcePoint" />
+            <mxPoint x="1050" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1018" y="404" />
+              <mxPoint x="1018" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="box21" value="DTO" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#53657B;fontFamily=Noto Sans CJK JP;fontSize=14;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="992.5" y="373.92" width="75" height="21.7" as="geometry" />
+        </mxCell>
+        <mxCell id="edge22" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#2866A7;strokeWidth=2.5;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="662" as="sourcePoint" />
+            <mxPoint x="1048" y="662" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="box23" value="open()" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#53657B;fontFamily=Noto Sans CJK JP;fontSize=15;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="962.0" y="629.2" width="86" height="23.25" as="geometry" />
+        </mxCell>
+        <mxCell id="edge24" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#8799AB;strokeWidth=2;dashed=1;dashPattern=5 4;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="718" as="sourcePoint" />
+            <mxPoint x="1050" y="444" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1006" y="718" />
+              <mxPoint x="1006" y="444" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="box25" value="生成" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#53657B;fontFamily=Noto Sans CJK JP;fontSize=14;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="990.0" y="690.92" width="60" height="21.7" as="geometry" />
+        </mxCell>
+        <mxCell id="box26" value="&lt;font color=&quot;#267B77&quot;&gt;Controller · 実装済み&lt;/font&gt;&lt;br&gt;&lt;b&gt;DbCheckServlet&lt;/b&gt;&lt;hr&gt;+ doGet(request, response): void&lt;br&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E8F1FC;strokeColor=#B9CADC;strokeWidth=1.7;align=left;verticalAlign=top;fontFamily=Noto Sans CJK JP;fontColor=#243247;fontSize=17;spacing=15;" vertex="1" parent="1">
+          <mxGeometry x="74" y="263" width="360" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="box27" value="&lt;font color=&quot;#7B8B9E&quot;&gt;Controller · Issue #34以降&lt;/font&gt;&lt;br&gt;&lt;b&gt;InventoryServlet&lt;/b&gt;&lt;hr&gt;+ doGet(request, response): void&lt;br&gt;+ doPost(request, response): void&lt;br&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#F9FBFE;strokeColor=#8799AB;strokeWidth=1.7;align=left;verticalAlign=top;fontFamily=Noto Sans CJK JP;fontColor=#243247;fontSize=17;spacing=15;dashed=1;dashPattern=7 5;" vertex="1" parent="1">
+          <mxGeometry x="74" y="490" width="360" height="184" as="geometry" />
+        </mxCell>
+        <mxCell id="box28" value="※ HealthServlet、ConnectCheckServletは" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#53657B;fontFamily=Noto Sans CJK JP;fontSize=15;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="721.2" width="365" height="23.25" as="geometry" />
+        </mxCell>
+        <mxCell id="box29" value="　開発用のため、この図では省略。" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#53657B;fontFamily=Noto Sans CJK JP;fontSize=15;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="749.2" width="350" height="23.25" as="geometry" />
+        </mxCell>
+        <mxCell id="box30" value="&lt;font color=&quot;#267B77&quot;&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; · 実装済み&lt;/font&gt;&lt;br&gt;&lt;b&gt;InventoryDao&lt;/b&gt;&lt;hr&gt;+ findAll(): List&amp;lt;Inventory&amp;gt;&lt;br&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E8F1FC;strokeColor=#B9CADC;strokeWidth=1.7;align=left;verticalAlign=top;fontFamily=Noto Sans CJK JP;fontColor=#243247;fontSize=17;spacing=15;" vertex="1" parent="1">
+          <mxGeometry x="552" y="272" width="420" height="182" as="geometry" />
+        </mxCell>
+        <mxCell id="box31" value="&lt;font color=&quot;#267B77&quot;&gt;DAO実装 · 実装済み&lt;/font&gt;&lt;br&gt;&lt;b&gt;PostgresInventoryDao&lt;/b&gt;&lt;hr&gt;- FIND_ALL_SQL: String&lt;br&gt;+ findAll(): List&amp;lt;Inventory&amp;gt;&lt;br&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E8F6F3;strokeColor=#B9CADC;strokeWidth=1.7;align=left;verticalAlign=top;fontFamily=Noto Sans CJK JP;fontColor=#243247;fontSize=17;spacing=15;" vertex="1" parent="1">
+          <mxGeometry x="552" y="540" width="420" height="222" as="geometry" />
+        </mxCell>
+        <mxCell id="box32" value="&lt;font color=&quot;#267B77&quot;&gt;DTO · 実装済み&lt;/font&gt;&lt;br&gt;&lt;b&gt;Inventory&lt;/b&gt;&lt;hr&gt;- id: int&lt;br&gt;- name: String&lt;br&gt;- quantity: int&lt;br&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E8F1FC;strokeColor=#B9CADC;strokeWidth=1.7;align=left;verticalAlign=top;fontFamily=Noto Sans CJK JP;fontColor=#243247;fontSize=17;spacing=15;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="271" width="440" height="192" as="geometry" />
+        </mxCell>
+        <mxCell id="box33" value="&lt;font color=&quot;#267B77&quot;&gt;DB接続 · 実装済み&lt;/font&gt;&lt;br&gt;&lt;b&gt;DbConnection&lt;/b&gt;&lt;hr&gt;+ open(): Connection&lt;br&gt;" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E8F6F3;strokeColor=#B9CADC;strokeWidth=1.7;align=left;verticalAlign=top;fontFamily=Noto Sans CJK JP;fontColor=#243247;fontSize=17;spacing=15;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="590" width="440" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="box34" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFF5E4;strokeColor=#E5CCA9;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="48" y="896" width="1494" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="box35" value="設計上の注意" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#C58A3A;fontFamily=Noto Sans CJK JP;fontSize=16;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="904.48" width="134" height="24.8" as="geometry" />
+        </mxCell>
+        <mxCell id="box36" value="InventoryDaoの insert / update / deleteById 等は未実装。登録・削除シーケンス図は将来設計。" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#243247;fontFamily=Noto Sans CJK JP;fontSize=16;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="208" y="904.48" width="1270" height="24.8" as="geometry" />
+        </mxCell>
+        <mxCell id="box37" value="現行 findAll() の SQLException 処理は変更せず、v0.1.1 で修正する方針。" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=none;strokeColor=none;fontColor=#53657B;fontFamily=Noto Sans CJK JP;fontSize=15;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="208" y="930.2" width="1130" height="23.25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

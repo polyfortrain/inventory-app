@@ -1,25 +1,34 @@
 @startuml
 !theme plain
-title UC-02 在庫登録 シーケンス図（設計案）
+title UC-02 在庫登録シーケンス図（設計案 / Issue #36）
 actor "在庫管理担当者" as User
 participant "Webブラウザ" as Browser
-participant InventoryServlet as Servlet
-participant InventoryService as Service
-participant "JdbcInventoryDao" as Dao
-database PostgreSQL as DB
-User -> Browser: 在庫名・数量を入力し登録
-Browser -> Servlet: POST /inventory/create (name, quantity)
-Servlet -> Service: create(name, quantity)
-Service -> Service: 入力検証（FR-05）
+participant "InventoryServlet\n(Controller)" as Servlet
+participant "dao : InventoryDao\n(PostgresInventoryDao)" as Dao
+participant "DbConnection" as Conn
+database "PostgreSQL" as DB
+
+User -> Browser : 在庫名・数量を入力して登録
+Browser -> Servlet : POST /inventory/create (name, quantity)
+Servlet -> Servlet : 入力検証（FR-05）
 alt 入力が不正
-  Service --> Servlet: 入力エラー
-  Servlet --> Browser: 入力画面＋エラー表示
+  Servlet --> Browser : 入力画面＋エラーメッセージ
 else 入力が正常
-  Service -> Dao: insert(name, quantity)
-  Dao -> DB: INSERT INTO inventory (...)
-  DB --> Dao: 新しいid
-  Dao --> Service: id
-  Service --> Servlet: id
-  Servlet --> Browser: リダイレクト（在庫一覧）
+  Servlet -> Dao : insert(name, quantity)
+  Dao -> Conn : open()
+  Conn -> DB : JDBC接続
+  DB --> Conn : Connection
+  Conn --> Dao : Connection
+  Dao -> DB : INSERT INTO inventory (name,quantity) ...
+  DB --> Dao : 自動採番されたid
+  Dao --> Servlet : id
+  Servlet --> Browser : 在庫一覧へリダイレクト
 end
+
+note over Servlet,Dao
+  Service層は設けない。Servletが入力検証を行い、
+  DAOはデータ登録のSQLを担当する。
+  insert()とInventoryServletはまだ実装されていない。
+  URLは既存設計の仮の値。
+end note
 @enduml

@@ -1,34 +1,66 @@
 @startuml
 !theme plain
-title 在庫管理Webアプリケーション クラス図（設計案）
+title 在庫管理Webアプリケーション クラス図（Serviceなし）
 skinparam classAttributeIconSize 0
-class InventoryServlet <<Controller>> {
-  +doGet(request, response): void
-  +doPost(request, response): void
+skinparam packageStyle rectangle
+skinparam shadowing false
+
+package "inventory.app.controller" {
+  class DbCheckServlet <<実装済み>> {
+    + doGet(request, response): void
+  }
+  class InventoryServlet <<Issue #34以降で実装>> {
+    + doGet(request, response): void
+    + doPost(request, response): void
+  }
 }
-class InventoryService <<Service>> {
-  +findAll(): List<Inventory>
-  +findById(id:int): Optional<Inventory>
-  +create(name:String, quantity:String): int
-  +update(id:int, name:String, quantity:String): boolean
-  +delete(id:int): boolean
+
+package "inventory.app.model" {
+  package "model.dto" {
+    class Inventory <<DTO / 実装済み>> {
+      - id: int
+      - name: String
+      - quantity: int
+    }
+  }
+  package "model.dao" {
+    interface InventoryDao <<実装済み>> {
+      + findAll(): List<Inventory>
+    }
+    class PostgresInventoryDao <<実装済み>> {
+      - FIND_ALL_SQL: String
+      + findAll(): List<Inventory>
+    }
+  }
+  package "model.db" {
+    class DbConnection <<実装済み>> {
+      + {static} open(): Connection
+    }
+  }
 }
-class Inventory <<Model>> {
-  -id: int
-  -name: String
-  -quantity: int
-}
-interface InventoryDao <<DAO>> {
-  +findAll(): List<Inventory>
-  +findById(id:int): Optional<Inventory>
-  +insert(name:String, quantity:int): int
-  +update(id:int, name:String, quantity:int): boolean
-  +deleteById(id:int): boolean
-}
-class JdbcInventoryDao <<JDBC>>
-InventoryServlet --> InventoryService : 利用
-InventoryService --> InventoryDao : 利用
-JdbcInventoryDao ..|> InventoryDao : 実装
-InventoryService ..> Inventory : 扱う
-JdbcInventoryDao ..> Inventory : マッピング
+
+DbCheckServlet --> InventoryDao : findAll() を利用
+InventoryServlet ..> InventoryDao : CRUDで利用（予定）
+PostgresInventoryDao ..|> InventoryDao : implements
+InventoryDao ..> Inventory : 一覧の戻り値
+PostgresInventoryDao ..> Inventory : インスタンスを生成
+PostgresInventoryDao --> DbConnection : open()
+
+note right of InventoryDao
+  現在は findAll() のみ実装済み。
+  findById, insert, update, deleteById などは
+  後続Issueで必要になった時点で追加する。
+end note
+
+note bottom of PostgresInventoryDao
+  現行findAll()はSQLExceptionを捕捉し、
+  printStackTrace()後に結果リストを返す。
+  修正はv0.1.1の予定（本図では現行動作を維持）。
+end note
+
+note left of DbCheckServlet
+  HealthServlet / ConnectCheckServlet は
+  開発用のため図から省略。
+  JSPはViewのためクラス図には含めない。
+end note
 @enduml

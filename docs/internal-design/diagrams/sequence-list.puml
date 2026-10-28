@@ -1,0 +1,34 @@
+@startuml
+!theme plain
+title UC-01 在庫一覧取得シーケンス図（現行実装 / Issue #33）
+actor "在庫管理担当者" as User
+participant "Webブラウザ" as Browser
+participant "DbCheckServlet\n(Controller)" as Servlet
+participant "dao : InventoryDao\n(PostgresInventoryDao)" as Dao
+participant "DbConnection" as Conn
+database "PostgreSQL" as DB
+
+User -> Browser : 一覧の確認を要求
+Browser -> Servlet : GET /DbCheckServlet
+Servlet -> Dao : findAll()
+Dao -> Conn : open()
+Conn -> DB : JDBC接続
+DB --> Conn : Connection
+Conn --> Dao : Connection
+Dao -> DB : SELECT id, name, quantity FROM inventory
+DB --> Dao : ResultSet
+loop 取得した各行
+  Dao -> Dao : new Inventory(id, name, quantity)
+end
+Dao --> Servlet : List<Inventory>
+Servlet --> Browser : 在庫情報をテキストで返す
+
+note over Dao
+  現行コードはSQLExceptionをcatchしてprintStackTrace()し、
+  エラー後も結果リストを返す。修正はv0.1.1の予定。
+end note
+note over Browser,Servlet
+  この時点の画面は確認用テキスト。
+  JSPでの一覧画面はIssue #34で作成予定。
+end note
+@enduml

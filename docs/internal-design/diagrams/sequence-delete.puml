@@ -1,27 +1,39 @@
 @startuml
 !theme plain
-title UC-04 在庫削除 シーケンス図（設計案）
+title UC-04 在庫削除シーケンス図（設計案 / Issue #40）
 actor "在庫管理担当者" as User
 participant "Webブラウザ" as Browser
-participant InventoryServlet as Servlet
-participant InventoryService as Service
-participant "JdbcInventoryDao" as Dao
-database PostgreSQL as DB
-User -> Browser: 削除確認に回答
+participant "InventoryServlet\n(Controller)" as Servlet
+participant "dao : InventoryDao\n(PostgresInventoryDao)" as Dao
+participant "DbConnection" as Conn
+database "PostgreSQL" as DB
+
+User -> Browser : 削除確認に回答
 alt キャンセル
-  note over Browser: リクエストを送信しない
+  note over Browser
+    削除リクエストは送信しない。
+    DBの内容は変更しない。
+  end note
 else 削除を承認
-  Browser -> Servlet: POST /inventory/delete (id)
-  Servlet -> Service: delete(id)
-  Service -> Dao: deleteById(id)
-  Dao -> DB: DELETE FROM inventory WHERE id = ?
-  DB --> Dao: 削除件数（0 または 1）
-  Dao --> Service: 成功/対象なし
-  Service --> Servlet: true/false
+  Browser -> Servlet : POST /inventory/delete (id)
+  Servlet -> Dao : deleteById(id)
+  Dao -> Conn : open()
+  Conn -> DB : JDBC接続
+  DB --> Conn : Connection
+  Conn --> Dao : Connection
+  Dao -> DB : DELETE FROM inventory WHERE id = ?
+  DB --> Dao : 削除件数（0 または 1）
+  Dao --> Servlet : 削除成功ならtrue、対象なしならfalse
   alt 削除成功
-    Servlet --> Browser: リダイレクト（在庫一覧）
+    Servlet --> Browser : 在庫一覧へリダイレクト
   else 対象なし
-    Servlet --> Browser: エラー表示（変更なし）
+    Servlet --> Browser : エラー表示（変更なし）
   end
 end
+
+note over Servlet,Dao
+  Service層は設けない。対象の有無は削除件数で判定。
+  deleteById()とInventoryServletはまだ実装されていない。
+  URLは既存設計の仮の値。
+end note
 @enduml
