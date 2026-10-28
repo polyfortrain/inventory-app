@@ -1,4 +1,4 @@
-package inventory.app;
+package inventory.app.controller;
 
 import java.io.IOException;
 
